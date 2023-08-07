@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.home_wrokout">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fitness"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/fitness"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Homewrokout">
+        <receiver  android:process=":remote" android:name=".Alarm_RecyclerView.AlertReciver"></receiver>
+        <activity android:name=".ReportActivity"></activity>
+        <activity android:name=".FirstActivity"></activity>
+        <activity android:name=".Level.BackActivity" />
+        <activity android:name=".Level.LegsAzctivity" />
+        <activity android:name=".Level.ArmsActivity" />
+        <activity android:name=".Level.ChestActivity" />
+        <activity android:name=".Alarm_RecyclerView.Alarm_add_activity" />
+        <activity android:name=".ExTimerActivity" />
+        <activity android:name=".Level.AbsActivity" />
+        <activity android:name=".TreningActivity" />
+        <activity android:name=".Alarm_RecyclerView.Alarm_activity" />
+        <activity android:name=".TreningActivity$MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
